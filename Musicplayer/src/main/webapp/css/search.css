@@ -1,0 +1,165 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/* Global Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+    margin-top: 18px;
+}
+
+.form-control {
+  border-radius: 20px;
+  border: 2px solid #ccc;
+  padding: 5px 20px;
+  width: 100%;
+  transition: border-color 0.3s;
+  margin-left: 8px;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #1db954;
+}
+
+.btn-success {
+    background-color: #1db954;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-success:hover {
+    background-color: #168f3a;
+}
+
+.list-group-item {
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.list-group-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* Dropdown Menu Styles */
+.select-genre,
+.select-playlist {
+    position: relative;
+    width: 100%;
+}
+
+.select-genre select,
+.select-playlist select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid #ccc;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-color: #fff;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+.select-genre select:hover,
+.select-playlist select:hover {
+    border-color: #1db954;
+}
+
+.select-genre select:focus,
+.select-playlist select:focus {
+    border-color: #1db954;
+    outline: none;
+}
+
+/* Audio Player Styles */
+#audio-player {
+    
+    height: 50px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#audio-player audio {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.audio-player{
+  padding-bottom: 8px;
+}
+
+/* Additional Styling */
+.btn-search {
+    background-color: transparent;
+    color: #1db954;
+    border: 2px solid #1db954;
+    border-radius: 20px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-search:hover {
+    background-color: #1db954;
+    color: white;
+}
+#audio-player{
+  display: none;
+}
+.track-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Track info styling */
+.track-info {
+  text-align: center;
+}
+
+.track-info h3 {
+  margin-bottom: 5px;
+}
+
+.track-info p {
+  margin-bottom: 3px;
+  font-size: 14px;
+  color: #6c757d;
+}
+
